@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin Login | Phishing Detector</title>
+<style>
+/* (same CSS as you had + small adjustments) */
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif;}
+body{height:100vh;background:linear-gradient(135deg,#1e3c72,#2a5298);display:flex;justify-content:center;align-items:center;}
+.login-box{background:#fff;width:400px;padding:40px;border-radius:15px;box-shadow:0 15px 40px rgba(0,0,0,0.3);text-align:center;position:relative;overflow:hidden;}
+.login-box::before{content:"";position:absolute;height:200%;width:200%;background:linear-gradient(60deg,#ff512f,#dd2476);top:-50%;left:-50%;transform:rotate(25deg);opacity:0.12;z-index:0;}
+.login-box h2{margin-bottom:30px;color:#333;font-weight:600;font-size:28px;z-index:1;position:relative;}
+.login-box input{width:90%;padding:12px 15px;margin:12px 0;border-radius:8px;border:1px solid #ccc;outline:none;transition:0.3s;z-index:1;position:relative;}
+.login-box input:focus{border-color:#ff512f;box-shadow:0 0 10px rgba(255,81,47,0.2);}
+.login-box button{width:92%;padding:12px 0;margin-top:20px;border:none;border-radius:8px;background:#ff512f;color:#fff;font-size:16px;cursor:pointer;font-weight:600;transition:0.3s;z-index:1;position:relative;}
+.login-box button:hover{background:#dd2476;}
+.error{color:red;margin-top:10px;z-index:1;position:relative;}
+.info{margin-top:15px;font-size:14px;color:#555;z-index:1;position:relative;}
+.login-box input::placeholder{color:#aaa;font-weight:400;}
+.login-box button:active{transform:scale(0.98);}
+</style>
+</head>
+<body>
+<div class="login-box">
+  <h2>Admin Login</h2>
+  <form method="POST">
+    <input type="text" name="username" placeholder="Enter username" required>
+    <input type="password" name="password" placeholder="Enter password" required>
+    <button type="submit">Login</button>
+  </form>
+  {% if error %}
+  <div class="error">{{ error }}</div>
+  {% endif %}
+  <div class="info">⚠ Only admin access is allowed</div>
+</div>
+</body>
+</html>
