@@ -20,11 +20,12 @@ This project scans email text for **suspicious links, keywords, and patterns** t
 
 ---
 📸 Screenshots
-##login Page
+
+## login Page
 ![WhatsApp Image 2025-09-19 at 22 48 34_1031d425](https://github.com/user-attachments/assets/492c46a8-0358-4149-a410-8f1d3eb37362)
-##Email Input Example
+## Email Input Example
 ![WhatsApp Image 2025-09-19 at 22 48 35_cf283129](https://github.com/user-attachments/assets/5753b4b7-1295-4faf-b169-6c8c95b0b87c)
-##Detection Result Page
+## Detection Result Page
 ![WhatsApp Image 2025-09-19 at 22 48 35_29a8e3bb](https://github.com/user-attachments/assets/488b2934-b11f-429d-afd9-b39f8603f7ba)
 
 🔮 Future Improvements
@@ -36,8 +37,8 @@ This project scans email text for **suspicious links, keywords, and patterns** t
 ✅ Database integration for suspicious links
 
 👨‍💻 Author
-
 Pawan Parise
+
 📌 GitHub:[ PawanParise](https://github.com/PawanParise/)
 
 
